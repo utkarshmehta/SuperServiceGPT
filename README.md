@@ -2,6 +2,8 @@
 
 A reference implementation of a secure, autonomous debugging and reporting loop using the **Model Context Protocol (MCP)** and **Gemini CLI**.
 
+## Demo
+
 ---
 
 ### 📖 Overview
