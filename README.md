@@ -7,6 +7,7 @@ Why this repo matters: it shows how to move from chat-style assistants to action
 ---
 
 ## Demo / Quick Overview
+![Demo](./mcp_demo.gif)
 
 This project demonstrates an "agentic loop" where an LLM-based reasoning host discovers a problem in a local codebase, proposes and (optionally) applies a fix, verifies it, and reports results to a private Slack channel — all mediated by MCP and constrained by project playbooks.
 
