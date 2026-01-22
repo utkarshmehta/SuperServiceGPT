@@ -69,3 +69,31 @@ npm install -g @google/gemini-cli
 
 # 3. Launch the agent in the project root
 gemini
+
+FILE: check-db.ts https://github.com/utkarshmehta/meatbar-analytics/blob/016fe565e4d0258b1bb49afa10b358f7d2a4989d/server/src/scripts/check-db.ts#L11
+
+
+DB Health Check Script
+
+This script is used by the SRE agent to verify connectivity.
+
+KNOWN BUG: The query is incomplete for testing the agentic loop. */
+
+async function runHealthCheck() { console.log("Checking database connectivity...");
+
+// The agent should find and fix the incomplete SELECT statement below
+const query = "SELECT * FROM analytics_logs WHERE status = 'ERROR' LIMIT;"; 
+
+console.log(`Executing query: ${query}`);
+// Simulated DB Execution logic here...
+}
+
+runHealthCheck();
+
+
+---
+
+### How to use this block:
+1.  **README.md**: Create this in your project root to provide the "Big Picture" for GitHub visitors.
+2.  **.gemini.md**: This is your "Instruction Manual." Place it in the same folder so the Gemini CLI picks up your SRE persona automatically.
+3.  **check-db.ts**: This is the "Bait." It contains the SQL bug you showed in your video, allowing others (or your own agent) to reproduce the workflow.
